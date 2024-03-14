@@ -10,6 +10,12 @@
     <Filter Include="Images">
       <UniqueIdentifier>{2b60a55a-0eb9-43c0-8238-c443d8619e88}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{b55ea02e-f457-462e-9fd0-1b4ed439e9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{566ad10f-497a-4da2-b339-438488f506fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMUgraphicsLib\auxil.cpp">
@@ -117,7 +123,9 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c">
       <Filter>CMUgraphicsLib\JPEG</Filter>
     </ClCompile>
-    <ClCompile Include="ShapeHunt.cpp" />
+    <ClCompile Include="ShapeHunt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h">
