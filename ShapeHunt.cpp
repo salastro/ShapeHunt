@@ -35,12 +35,15 @@ int main() {
 	int size, rx, ry;
 	color shapeColor;
 
+	// mainWindow.DrawRectangle(100, 100, 200, 200);
+	// DrawCar(mainWindow, RED, 100, 100, 100);
+
 	while (true) {
 		// Get keyboard input
 		mainWindow.GetKeyPress(keyboardCharacter);
 
 		// Generate random shape
-		shapeColor = color(rand() % 256, rand() % 256, rand() % 256);
+		shapeColor = color(rand() % 256, rand() % 256, rand() % 256);  // Random color bc why not ;)
 		size = rand() % (maxSize - minSize) + minSize;
 		rx = rand() % (width - size - padding) + padding / 3; // Divide by 3 because of edge issue
 		ry = rand() % (height - size - padding) + padding / 3; // Divide by 3 because of edge issue

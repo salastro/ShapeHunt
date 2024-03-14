@@ -42,7 +42,7 @@ void DrawHouse(window& w, color c, int rx, int ry, int size) {
 	// 2/3 of the size is the height of the house
 	w.DrawRectangle(rx, ry + size / 3, rx + size, ry + size);
 
-	// New color for the roof
+	// Roof color
 	color cInverted = color(255 - c.ucRed, 255 - c.ucGreen, 255 - c.ucBlue);
 	w.SetPen(cInverted); w.SetBrush(cInverted);
 
