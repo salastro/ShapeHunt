@@ -6,6 +6,13 @@
 #include "CMUgraphicsLib\CMUgraphics.h"
 #include "DrawShapes.h"
 
+void ClearWindow(window& w) {
+	w.Clear();
+	w.SetPen(BLACK);
+	w.SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
+	w.DrawString(5, 5, "Welcome!!!");
+}
+
 int main() {
 	// Seed random number generator
 	srand(time(0));
@@ -24,7 +31,6 @@ int main() {
 	char keyboardCharacter;
 	mainWindow.FlushKeyQueue();
 
-
 	// Draw shapes
 	int padding = 50, minSize = 25, maxSize = 100;
 	int size, rx, ry;
@@ -41,11 +47,14 @@ int main() {
 		ry = rand() % (height - size - padding) + padding / 3; // Divide by 3 because of edge issue
 
 		switch (keyboardCharacter) {
-		case 'q':
-			exit(0);
+		case 'c':
+			DrawCar(mainWindow, shapeColor, rx, ry, size);
+			break;
 		case 'h':
 			DrawHouse(mainWindow, shapeColor, rx, ry, size);
 			break;
+		case 'q':
+			exit(0);
 		default:
 			break;
 		}
