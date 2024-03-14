@@ -60,6 +60,7 @@ int main() {
 			break;
 		case 'q':
 			exit(0);
+			break;
 		default:
 			break;
 		}
