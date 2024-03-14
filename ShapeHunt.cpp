@@ -7,10 +7,9 @@
 #include "DrawShapes.h"
 
 void ClearWindow(window& w) {
-	w.Clear();
-	w.SetPen(BLACK);
-	w.SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
-	w.DrawString(5, 5, "Welcome!!!");
+	w.SetPen(WHITE);
+	w.SetBrush(WHITE);
+	w.DrawRectangle(0, 0, w.GetWidth(), w.GetHeight());
 }
 
 int main() {
@@ -52,6 +51,9 @@ int main() {
 			break;
 		case 'h':
 			DrawHouse(mainWindow, shapeColor, rx, ry, size);
+			break;
+		case '[':
+			ClearWindow(mainWindow);
 			break;
 		case 'q':
 			exit(0);
