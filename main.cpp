@@ -4,7 +4,7 @@
 #include <ctime>
 
 #include "CMUgraphicsLib\CMUgraphics.h"
-#include "DrawShapes.h"
+#include "draw_composite_shapes.h"
 
 void ClearWindow(window& w) {
 	w.SetPen(WHITE);

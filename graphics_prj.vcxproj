@@ -161,8 +161,8 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant1.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant2.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c" />
-    <ClCompile Include="DrawShapes.cpp" />
-    <ClCompile Include="ShapeHunt.cpp" />
+    <ClCompile Include="draw_composite_shapes.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h" />
@@ -185,16 +185,7 @@
     <ClInclude Include="CMUgraphicsLib\jpeg\jpegint.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jpeglib.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h" />
-    <ClInclude Include="DrawShapes.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="images\COPY.jpg" />
-    <Image Include="images\CUT.jpg" />
-    <Image Include="images\Delete.JPG" />
-    <Image Include="images\EXIT.JPG" />
-    <Image Include="images\REDO.jpg" />
-    <Image Include="images\RUN.JPG" />
-    <Image Include="images\UNDO.jpg" />
+    <ClInclude Include="draw_composite_shapes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,10 +1,10 @@
-#include "DrawShapes.h"
+#include "draw_composite_shapes.h"
 
-/* Reference points + size always draws a full rectangle, as such, all shapes
-should fit inside to make further position calculations easier.
-AKA:
-- The reference point is the top left corner of the shape.
-- The size is the width and height (hit box) of the shape. */
+// Reference points + size always draws a full rectangle, as such, all shapes
+// should fit inside to make further position calculations easier.
+// AKA:
+// - The reference point is the top left corner of the shape.
+// - The size is the width and height (hit box) of the shape.
 
 void DrawCar(window& w, color c, int rx, int ry, int size) {
 	w.SetPen(c); w.SetBrush(c);
