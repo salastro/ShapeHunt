@@ -59,3 +59,19 @@ void DrawCloud(window& w, color c, int rx, int ry, int size) {
 	w.DrawCircle(rx + size / 8 + size / 2, ry - size / 8 + size / 2, size / 4);
 	w.DrawCircle(rx - size / 8 + size / 2, ry - size / 8 + size / 2, size / 4);
 }
+
+void DrawIceCream(window& w, color c, int rx, int ry, int size) {
+	w.SetPen(c); w.SetBrush(c);
+	// Radius to standerize calculations
+	int R = size / 4;
+
+	// Draw head
+	w.DrawCircle(rx + size / 2, ry + size / 4, R);
+
+	// Cone color
+	color coneColor = color(255 - c.ucRed, 255 - c.ucGreen, 255 - c.ucBlue);
+	w.SetPen(coneColor); w.SetBrush(coneColor);
+
+	// Draw cone
+	w.DrawTriangle(rx + size / 2 - R, ry + size / 2 - R, rx + size / 2, ry + size, rx + size * 3 / 4, ry + size / 2 - R);
+}

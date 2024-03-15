@@ -58,6 +58,9 @@ int main() {
 		case 'l':
 			DrawCloud(mainWindow, shapeColor, rx, ry, size);
 			break;
+		case 'i':
+			DrawIceCream(mainWindow, shapeColor, rx, ry, size);
+			break;
 		case '[':
 			ClearWindow(mainWindow);
 			break;
