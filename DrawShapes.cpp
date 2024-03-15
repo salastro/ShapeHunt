@@ -33,8 +33,8 @@ void DrawCar(window& w, color c, int rx, int ry, int size) {
 	w.SetPen(cWindows); w.SetBrush(cWindows);
 
 	// Draw windows
-	w.DrawRectangle(rx + size / 8, ry + size * 2/ 5, rx + size * 3 / 8, ry + size * 4 / 6);
-	w.DrawRectangle(rx + size * 5 / 8, ry + size * 2/ 5, rx + size * 7 / 8, ry + size * 4 / 6);
+	w.DrawRectangle(rx + size / 8, ry + size * 2 / 5, rx + size * 3 / 8, ry + size * 4 / 6);
+	w.DrawRectangle(rx + size * 5 / 8, ry + size * 2 / 5, rx + size * 7 / 8, ry + size * 4 / 6);
 }
 
 void DrawHouse(window& w, color c, int rx, int ry, int size) {
