@@ -17,8 +17,9 @@ int main() {
 	srand(time(0));
 
 	// Create window
-	int width = 500, height = 500, x = 50, y = 50;
-	window mainWindow(width, height, x, y);
+	const int WIDTH = 1000, HEIGHT = 700;
+	int x = 50, y = 50;
+	window mainWindow(WIDTH, HEIGHT, x, y);
 	mainWindow.ChangeTitle("Shape Hunt");
 
 	// Message
@@ -45,8 +46,8 @@ int main() {
 		// Generate random shape
 		shapeColor = color(rand() % 256, rand() % 256, rand() % 256);  // Random color bc why not ;)
 		size = rand() % (maxSize - minSize) + minSize;
-		rx = rand() % (width - size - padding) + padding / 3; // Divide by 3 because of edge issue
-		ry = rand() % (height - size - padding) + padding / 3; // Divide by 3 because of edge issue
+		rx = rand() % (WIDTH - size - padding) + padding / 3; // Divide by 3 because of edge issue
+		ry = rand() % (HEIGHT - size - padding) + padding / 3; // Divide by 3 because of edge issue
 
 		switch (keyboardCharacter) {
 		case 'c':
