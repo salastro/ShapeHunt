@@ -49,3 +49,13 @@ void DrawHouse(window& w, color c, int rx, int ry, int size) {
 	// Draw roof
 	w.DrawTriangle(rx, ry + size / 3, rx + size, ry + size / 3, rx + size / 2, ry);
 }
+
+void DrawCloud(window& w, color c, int rx, int ry, int size) {
+	w.SetPen(c); w.SetBrush(c);
+	// Draw cloud
+	w.DrawCircle(rx + size / 2, ry + size / 2, size / 4);
+	w.DrawCircle(rx + size - size/4, ry + size / 2, size / 4);
+	w.DrawCircle(rx - size / 4 + size / 2, ry + size / 2, size / 4);
+	w.DrawCircle(rx + size / 8 + size / 2, ry - size / 8 + size / 2, size / 4);
+	w.DrawCircle(rx - size / 8 + size / 2, ry - size / 8 + size / 2, size / 4);
+}
