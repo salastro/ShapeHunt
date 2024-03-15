@@ -7,9 +7,6 @@
     <Filter Include="CMUgraphicsLib\JPEG">
       <UniqueIdentifier>{182adb08-5338-4c7f-8f0a-5c5c8ac943d6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Images">
-      <UniqueIdentifier>{2b60a55a-0eb9-43c0-8238-c443d8619e88}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{b55ea02e-f457-462e-9fd0-1b4ed439e9eb}</UniqueIdentifier>
     </Filter>
@@ -123,10 +120,10 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c">
       <Filter>CMUgraphicsLib\JPEG</Filter>
     </ClCompile>
-    <ClCompile Include="ShapeHunt.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DrawShapes.cpp">
+    <ClCompile Include="draw_composite_shapes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -191,31 +188,8 @@
     <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h">
       <Filter>CMUgraphicsLib\JPEG</Filter>
     </ClInclude>
-    <ClInclude Include="DrawShapes.h">
+    <ClInclude Include="draw_composite_shapes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="images\COPY.jpg">
-      <Filter>Images</Filter>
-    </Image>
-    <Image Include="images\CUT.jpg">
-      <Filter>Images</Filter>
-    </Image>
-    <Image Include="images\Delete.JPG">
-      <Filter>Images</Filter>
-    </Image>
-    <Image Include="images\EXIT.JPG">
-      <Filter>Images</Filter>
-    </Image>
-    <Image Include="images\REDO.jpg">
-      <Filter>Images</Filter>
-    </Image>
-    <Image Include="images\RUN.JPG">
-      <Filter>Images</Filter>
-    </Image>
-    <Image Include="images\UNDO.jpg">
-      <Filter>Images</Filter>
-    </Image>
   </ItemGroup>
 </Project>
