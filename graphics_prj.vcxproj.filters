@@ -126,6 +126,9 @@
     <ClCompile Include="draw_composite_shapes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="window_utils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CMUgraphicsLib\auxil.h">
@@ -189,6 +192,9 @@
       <Filter>CMUgraphicsLib\JPEG</Filter>
     </ClInclude>
     <ClInclude Include="draw_composite_shapes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="window_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

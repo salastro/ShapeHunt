@@ -5,12 +5,7 @@
 
 #include "CMUgraphicsLib\CMUgraphics.h"
 #include "draw_composite_shapes.h"
-
-void ClearWindow(window& w) {
-	w.SetPen(WHITE);
-	w.SetBrush(WHITE);
-	w.DrawRectangle(0, 0, w.GetWidth(), w.GetHeight());
-}
+#include "window_utils.h"
 
 int main() {
 	// Seed random number generator
@@ -21,6 +16,23 @@ int main() {
 	int x = 50, y = 50;
 	window mainWindow(WIDTH, HEIGHT, x, y);
 	mainWindow.ChangeTitle("Shape Hunt");
+
+	const int ITEMS_COUNT = 7;
+	const int ITEM_SIZE = 40;
+
+	const string ITEMS_MENU[ITEMS_COUNT] = {
+		"images\\copy.jpg",
+		"images\\cut.jpg",
+		"images\\delete.jpg",
+		"images\\run.jpg",
+		"images\\undo.jpg",
+		"images\\redo.jpg",
+		"images\\exit.jpg"
+	};
+
+	// Draw menu
+	DrawMenu(mainWindow, ITEMS_MENU, ITEMS_COUNT, ITEM_SIZE);
+
 
 	// Message
 	mainWindow.SetPen(BLACK);
