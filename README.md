@@ -47,6 +47,24 @@ Do not use non-standard extensions.
 9. Use `snake_case_` with a trailing underscore for class member variables.
 10. If naming something that is analogous to an existing C/C++ entity then follow the existing naming convention scheme.
 
+### Sorting
+
+- Sort `#include` directives in the following order:
+	1. Related header file.
+	2. C library.
+	3. C++ library.
+	4. Other libraries' .h files.
+	5. Your project's .h files.
+- Sort `#include` directives alphabetically within each group.
+- Sort function declarations and definitions alphabetically within each class.
+- Sort class member variables alphabetically within each class.
+- Sort switch cases alphabetically within each switch statement.
+	- Exist, Quit, Cancel, and similar cases should be at the end.
+	- The default case should be the last case.
+- Sort enum values alphabetically within each enum.
+
+_If there is a clearly logical sorting then (e.g. weekdays in an enum) then it is to be followed_
+
 ### Scoping
 
 - Use the smallest scope possible.

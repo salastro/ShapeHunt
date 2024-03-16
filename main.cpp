@@ -68,11 +68,11 @@ int main() {
 		case 'h':
 			DrawHouse(mainWindow, shapeColor, rx, ry, size);
 			break;
-		case 'l':
-			DrawCloud(mainWindow, shapeColor, rx, ry, size);
-			break;
 		case 'i':
 			DrawIceCream(mainWindow, shapeColor, rx, ry, size);
+			break;
+		case 'l':
+			DrawCloud(mainWindow, shapeColor, rx, ry, size);
 			break;
 		case '[':
 			ClearWindow(mainWindow);
