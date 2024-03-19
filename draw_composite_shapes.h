@@ -7,4 +7,4 @@ void DrawCloud(window& w, color c, int rx, int ry, int size);
 void DrawHouse(window& w, color c, int rx, int ry, int size);
 void DrawIceCream(window& w, color c, int rx, int ry, int size);
 void DrawPlane(window& w, color c, int rx, int ry, int size);
-void DrawTree(window& w, color c, int rx, int ry, int size); 
+void DrawTree(window& w, color c, int rx, int ry, int size);
