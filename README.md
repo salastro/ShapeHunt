@@ -112,4 +112,4 @@ Use `enum class` instead of `enum`.
 - Functions should have a small number of arguments.
 - Prefer to use pass-by-reference instead of pass-by-value for large objects.
 - Prefer to use pass-by-value for small objects.
-- Prefer to use pass-by-const-reference for objects that are not modified.
+

@@ -12,7 +12,7 @@ int main() {
 	srand(time(0));
 
 	// Create window
-	const int WIDTH = 1000, HEIGHT = 700;
+	const int WIDTH = 1250, HEIGHT = 700;
 	int x = 50, y = 50;
 	window mainWindow(WIDTH, HEIGHT, x, y);
 	mainWindow.ChangeTitle("Shape Hunt");
@@ -20,24 +20,10 @@ int main() {
 	const int ITEMS_COUNT = 7;
 	const int ITEM_SIZE = 40;
 
-	const string ITEMS_MENU[ITEMS_COUNT] = {
-		"images\\copy.jpg",
-		"images\\cut.jpg",
-		"images\\delete.jpg",
-		"images\\run.jpg",
-		"images\\undo.jpg",
-		"images\\redo.jpg",
-		"images\\exit.jpg"
-	};
-
-	// Draw menu
-	DrawMenu(mainWindow, ITEMS_MENU, ITEMS_COUNT, ITEM_SIZE);
-
-
 	// Message
 	mainWindow.SetPen(BLACK);
 	mainWindow.SetFont(20, BOLD | ITALICIZED, BY_NAME, "Arial");
-	mainWindow.DrawString(5, 5, "Welcome!!!");
+	mainWindow.DrawString(5, 5, "c: draw car, h: draw house, l: draw cloud, i: draw ice cream, t: draw tree, p: draw plane, z: draw W zigzag, [: clear window, q: quit");
 
 	// Keyboard input
 	char keyboardCharacter;
@@ -63,23 +49,23 @@ int main() {
 
 		switch (keyboardCharacter) {
 		case 'c':
-			DrawCar(mainWindow, shapeColor, rx, ry, size);
-			break;
+			DrawCar(mainWindow, shapeColor, rx, ry, size); break;
 		case 'h':
-			DrawHouse(mainWindow, shapeColor, rx, ry, size);
-			break;
+			DrawHouse(mainWindow, shapeColor, rx, ry, size); break;
 		case 'l':
-			DrawCloud(mainWindow, shapeColor, rx, ry, size);
-			break;
+			DrawCloud(mainWindow, shapeColor, rx, ry, size); break;
 		case 'i':
-			DrawIceCream(mainWindow, shapeColor, rx, ry, size);
-			break;
+			DrawIceCream(mainWindow, shapeColor, rx, ry, size); break;
+		case 't':
+			DrawTree(mainWindow, shapeColor, rx, ry, size); break;
+		case 'p':
+			DrawPlane(mainWindow, shapeColor, rx, ry, size); break;
+		case 'z':
+			DrawZigzag(mainWindow, shapeColor, rx, ry, size); break;
 		case '[':
-			ClearWindow(mainWindow);
-			break;
+			ClearWindow(mainWindow); break;
 		case 'q':
-			exit(0);
-			break;
+			exit(0); break;
 		default:
 			break;
 		}

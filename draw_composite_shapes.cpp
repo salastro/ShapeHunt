@@ -55,3 +55,35 @@ void DrawIceCream(window& w, color c, int rx, int ry, int size) {
 	// Draw cone
 	w.DrawTriangle(rx + size / 2 - R, ry + size / 2 - R, rx + size / 2, ry + size, rx + size * 3 / 4, ry + size / 2 - R);
 }
+
+void DrawTree(window& w, color c, int rx, int ry, int size) {
+	w.SetPen(c); w.SetBrush(c);
+	// Draw trunk
+	w.DrawRectangle(rx + size / 3, ry + size / 3, rx + size * 2 / 3, ry + size);
+
+	// Draw leaves
+	w.SetPen(GREEN); w.SetBrush(GREEN);
+	w.DrawCircle(rx + size / 2, ry + size / 3, size / 3);
+}
+
+void DrawPlane(window& w, color c, int rx, int ry, int size) {
+	w.SetPen(c); w.SetBrush(c);
+	// Draw body
+	w.DrawRectangle(rx + size / 3, ry + size / 3, rx + size * 2 / 3, ry + size);
+
+	// Draw head
+	w.DrawTriangle(rx, ry + size / 3, rx + size, ry + size / 3, rx + size / 2, ry);
+	w.DrawTriangle(rx + size / 4, ry + size / 3, rx + size * 3 / 4, ry + size / 3, rx + size / 2, ry - size / 4);
+
+	// Draw tail canon
+	w.DrawArc(rx + size / 3, ry + size, rx + size * 2 / 3, ry + size * 3 / 2, 0, 180);
+}
+
+void DrawZigzag(window& w, color c, int rx, int ry, int size) {
+	w.SetPen(c); w.SetBrush(c);
+	// Draw zigzag
+	w.DrawLine(rx, ry, rx + size / 4, ry + size / 2);
+	w.DrawLine(rx + size / 4, ry + size / 2, rx + size / 2, ry);
+	w.DrawLine(rx + size / 2, ry, rx + size * 3 / 4, ry + size / 2);
+	w.DrawLine(rx + size * 3 / 4, ry + size / 2, rx + size, ry);
+}
